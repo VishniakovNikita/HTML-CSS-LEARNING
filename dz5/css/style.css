@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Tahoma, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+/* nav */
+.nav_panel {
+  background-color: #074d8b;
+  position: relative;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+ul.menu > li > a {
+  display: block;
+  padding: 10px;
+  color: #317eba;
+
+  text-decoration: none;
+}
+
+ul.menu > li > a:hover {
+  background-color: #209ca5;
+  color: white;
+}
+
+/* right panel */
+
+.line {
+  margin-right: 18px;
+  height: 32px;
+  margin-top: 3px;
+}
+
+.flag {
+  height: 30px;
+  margin-top: 8px;
+}
+
+.minhas > p {
+  margin-right: 14px;
+
+  display: block;
+  padding: 10px;
+}
+
+.Ola > p {
+  display: block;
+  padding: 10px;
+}
+
+.minhas > p:hover {
+  background: linear-gradient(#4ca9d9, #2e7ac4);
+}
+
+.Ola > p:hover {
+  background: linear-gradient(#4ca9d9, #2e7ac4);
+}
+
+.right_panel {
+  position: absolute;
+  top: 0px;
+  right: 7px;
+
+  display: flex;
+  justify-content: center;
+
+  color: white;
+}
+
+/* main */
+
+.header {
+  width: 560px;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  opacity: 0.7;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* facebook button */
+.link_facebook {
+  color: #fff; /* цвет текста */
+  text-decoration: none; /* убирать подчёркивание у ссылок */
+  user-select: none; /* убирать выделение текста */
+  background: url(../img/facebook.png) no-repeat;
+  background-size: 100%;
+  width: 276px;
+  height: 35px;
+  outline: none; /* убирать контур в Mozilla */
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.link_facebook:active {
+  background: linear-gradient(#dbe3e7, #0cb4ca);
+} /* при нажатии */
+
+.content {
+  width: 560px;
+  height: 555px;
+
+  margin-top: 3px;
+
+  background-color: rgba(0, 0, 0, 0.65);
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /*ось У*/
+  align-items: center; /*ось X*/
+}
+
+main {
+  background: url(../img/background.png) no-repeat;
+  background-size: 100%;
+  height: 1030px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /*ось У*/
+  align-items: center; /*ось X*/
+}
+
+.account_button {
+  display: flex;
+  width: 150px;
+  height: 35px;
+  padding: 2px;
+  align-items: center;
+  justify-content: center;
+}
+
+.my_buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /*ось У*/
+  align-items: center; /*ось X*/
+  margin-bottom: 5px;
+}
+
+.content > .my_buttons > input {
+  margin-bottom: 20px;
+  width: 275px;
+  height: 35px;
+  background: black;
+}
+
+/* .account_create {
+  background: linear-gradient(#4ca9d9, #2e7ac4);
+} */
+
+.content > .my_buttons > input:hover {
+  border: none;
+
+  background-color: #1b5288;
+  color: white;
+  box-shadow: -1px -1px 21px 5px rgba(44, 149, 184, 0.92);
+  -webkit-box-shadow: -1px -1px 21px 5px rgba(44, 149, 184, 0.92);
+  -moz-box-shadow: -1px -1px 21px 5px rgba(44, 149, 184, 0.92);
+}
+
+.account_create {
+  color: #fff; /* цвет текста */
+  text-decoration: none; /* убирать подчёркивание у ссылок */
+  user-select: none; /* убирать выделение текста */
+  background: linear-gradient(#4ca9d9, #2e7ac4); /* фон кнопки */
+  padding: 0.7em 1.5em; /* отступ от текста */
+  outline: none; /* убирать контур в Mozilla */
+  border-radius: 5px;
+  transition: 1s;
+}
+.account_create:hover {
+  background: linear-gradient(#bac8cf, #0c6bca);
+} /* при наведении курсора мышки */
+.account_create:active {
+  background: linear-gradient(#dbe3e7, #0cb4ca);
+} /* при нажатии */
